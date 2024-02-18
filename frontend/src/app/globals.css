@@ -1,6 +1,99 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.flex-content {
+  display: flex;
+  align-content: flex-start;
+}
+.flex-content--direction-row {
+  flex-direction: row;
+}
+.flex-content--direction-column {
+  flex-direction: column;
+}
+.flex-content--align-start {
+  align-items: flex-start;
+}
+.flex-content--align-end {
+  align-items: flex-end;
+}
+.flex-content--align-center {
+  align-items: center;
+}
+.flex-content--align-initial {
+  align-items: initial;
+}
+.flex-content--justify-start {
+  justify-content: flex-start;
+}
+.flex-content--justify-end {
+  justify-content: flex-end;
+}
+.flex-content--justify-center {
+  justify-content: center;
+}
+.flex-content--justify-space-around {
+  justify-content: space-around;
+}
+.flex-content--justify-space-between {
+  justify-content: space-between;
+}
+.flex-content--justify-space-evenly {
+  justify-content: space-evenly;
+}
+.flex-content--spacing-xsmall {
+  gap: 4px;
+}
+.flex-content--spacing-small {
+  gap: 8px;
+}
+.flex-content--spacing-medium {
+  gap: 16px;
+}
+.flex-content--spacing-large {
+  gap: 24px;
+}
+.flex-content--spacing-large-plus {
+  gap: calc(16px * 2);
+}
+.flex-content--spacing-xlarge {
+  gap: 32px;
+}
+.flex-content--wrap {
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 576px), screen and (min-width: 768px), screen and (min-width: 992px) {
+  .flex-content--mobile-direction-row {
+    flex-direction: row !important;
+  }
+  .flex-content--mobile-direction-column {
+    flex-direction: column !important;
+  }
+  .flex-content--mobile-direction-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
+.flex-content--layout-columns > *:first-child:nth-last-child(2), .flex-content--layout-columns > *:first-child:nth-last-child(2) ~ * {
+  flex: 0 2 50%;
+}
+.flex-content--layout-columns > *:first-child:nth-last-child(3), .flex-content--layout-columns > *:first-child:nth-last-child(3) ~ * {
+  flex: 0 2 33%;
+}
+.flex-content--layout-columns > *:first-child:nth-last-child(4), .flex-content--layout-columns > *:first-child:nth-last-child(4) ~ * {
+  flex: 0 2 25%;
+}
+.flex-content--layout-columns > *:first-child:nth-last-child(5), .flex-content--layout-columns > *:first-child:nth-last-child(5) ~ * {
+  flex: 0 2 20%;
+}
+.flex-content--layout-two-columns-wide-left > *:first-child:nth-last-child(2) {
+  flex: 0 2 65%;
+}
+.flex-content--layout-two-columns-wide-left > *:first-child:nth-last-child(2) ~ * {
+  flex: 0 2 35%;
+}
+.flex-content--layout-two-columns-wide-right > *:first-child:nth-last-child(2) {
+  flex: 0 2 35%;
+}
+.flex-content--layout-two-columns-wide-right > *:first-child:nth-last-child(2) ~ * {
+  flex: 0 2 65%;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -15,15 +108,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -31,3 +118,5 @@ body {
     text-wrap: balance;
   }
 }
+
+/*# sourceMappingURL=globals.css.map */
