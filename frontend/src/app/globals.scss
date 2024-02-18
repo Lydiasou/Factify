@@ -1,218 +1,4 @@
-// // Définition des variables pour les espacements
-// $spacing-xs: 4px;
-// $spacing-sm: 8px;
-// $spacing-md: 16px;
-// $spacing-lg: 24px;
-// $spacing-xl: 32px;
-
-// // Définition des variables pour les points de rupture média
-// $screen-s: 576px;
-// $screen-m: 768px;
-// $screen-l: 992px;
-
-// // Définition des directives Sass pour .flex-content
-// .flex-content {
-//   display: flex;
-//   align-content: flex-start;
-
-//   &--direction {
-//     &-row {
-//       flex-direction: row;
-//     }
-
-//     &-column {
-//       flex-direction: column;
-//     }
-//   }
-
-//   &--align {
-//     &-start {
-//       align-items: flex-start;
-//     }
-
-//     &-end {
-//       align-items: flex-end;
-//     }
-
-//     &-center {
-//       align-items: center;
-//     }
-
-//     &-initial {
-//       align-items: initial;
-//     }
-//   }
-
-//   &--justify {
-//     &-start {
-//       justify-content: flex-start;
-//     }
-
-//     &-end {
-//       justify-content: flex-end;
-//     }
-
-//     &-center {
-//       justify-content: center;
-//     }
-
-//     &-space-around {
-//       justify-content: space-around;
-//     }
-
-//     &-space-between {
-//       justify-content: space-between;
-//     }
-
-//     &-space-evenly {
-//       justify-content: space-evenly;
-//     }
-//   }
-
-//   &--spacing {
-//     &-xsmall {
-//       gap: $spacing-xs;
-//     }
-
-//     &-small {
-//       gap: $spacing-sm;
-//     }
-
-//     &-medium {
-//       gap: $spacing-md;
-//     }
-
-//     &-large {
-//       gap: $spacing-lg;
-//     }
-
-//     &-large-plus {
-//       gap: calc(#{$spacing-md} * 2);
-//     }
-
-//     &-xlarge {
-//       gap: $spacing-xl;
-//     }
-//   }
-
-//   &--wrap {
-//     flex-wrap: wrap;
-//   }
-
-//   &--mobile-direction {
-//     @media screen and (min-width: $screen-s), screen and (min-width: $screen-m), screen and (min-width: $screen-l) {
-//       &-row {
-//         flex-direction: row !important;
-//       }
-
-//       &-column {
-//         flex-direction: column !important;
-//       }
-
-//       &-column-reverse {
-//         flex-direction: column-reverse !important;
-//       }
-//     }
-//   }
-
-//   &--layout {
-//     &-columns {
-//       > * {
-//         &:first-child:nth-last-child(2),
-//         &:first-child:nth-last-child(2) ~ * {
-//           flex: 0 2 50%;
-//         }
-
-//         &:first-child:nth-last-child(3),
-//         &:first-child:nth-last-child(3) ~ * {
-//           flex: 0 2 33%;
-//         }
-
-//         &:first-child:nth-last-child(4),
-//         &:first-child:nth-last-child(4) ~ * {
-//           flex: 0 2 25%;
-//         }
-
-//         &:first-child:nth-last-child(5),
-//         &:first-child:nth-last-child(5) ~ * {
-//           flex: 0 2 20%;
-//         }
-//       }
-//     }
-
-//     &-two-columns-wide-left {
-//       > * {
-//         &:first-child:nth-last-child(2) {
-//           flex: 0 2 65%;
-//         }
-
-//         &:first-child:nth-last-child(2) ~ * {
-//           flex: 0 2 35%;
-//         }
-//       }
-//     }
-
-//     &-two-columns-wide-right {
-//       > * {
-//         &:first-child:nth-last-child(2) {
-//           flex: 0 2 35%;
-//         }
-
-//         &:first-child:nth-last-child(2) ~ * {
-//           flex: 0 2 65%;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// /* Ajoutez ces styles à votre fichier CSS */
-// // Assurez-vous que le conteneur principal (.main-container) utilise flexbox pour aligner son contenu verticalement
-// .content {
-//   flex: 1; /* Le contenu prendra toute la hauteur disponible */
-//   display: flex; /* Utiliser un affichage flexible */
-//   flex-direction: column; /* Aligner le contenu verticalement */
-//   justify-content: center; /* Centrer le contenu horizontalement */
-//   align-items: center; /* Centrer le contenu verticalement */
-//   text-align: center; /* Centrer le texte horizontalement */
-// }
-
-// // Assurez-vous que le contenu principal (.content) utilise flexbox pour prendre toute la hauteur disponible
-// .content div {
-//   margin-top: 20px; /* Ajoute un espace entre le h3 et la div */
-// }
-
-
-
-// // // Définition des couleurs pour le thème sombre
-// // :root {
-// //   --foreground-rgb: 0, 0, 0;
-// //   --background-start-rgb: 214, 219, 220;
-// //   --background-end-rgb: 255, 255, 255;
-// // }
-
-// // @media (prefers-color-scheme: dark) {
-// //   :root {
-// //     --foreground-rgb: 255, 255, 255;
-// //     --background-start-rgb: 0, 0, 0;
-// //     --background-end-rgb: 0, 0, 0;
-// //   }
-// // }
-
-// // // Application des couleurs au corps de la page
-// // body {
-// //   color: rgb(var(--foreground-rgb));
-// //   background: linear-gradient(
-// //       to bottom,
-// //       transparent,
-// //       rgb(var(--background-end-rgb))
-// //     )
-// //     rgb(var(--background-start-rgb));
-// // }
-
-////////////////////////////////
 @import '~bootstrap/scss/bootstrap';
-
 // Définition des variables pour les espacements
 $spacing-xs: 4px;
 $spacing-sm: 8px;
@@ -224,6 +10,210 @@ $spacing-xl: 32px;
 $screen-s: 576px;
 $screen-m: 768px;
 $screen-l: 992px;
+
+// Définition des directives Sass pour .flex-content
+.flex-content {
+  display: flex;
+  align-content: flex-start;
+
+  &--direction {
+    &-row {
+      flex-direction: row;
+    }
+
+    &-column {
+      flex-direction: column;
+    }
+  }
+
+  &--align {
+    &-start {
+      align-items: flex-start;
+    }
+
+    &-end {
+      align-items: flex-end;
+    }
+
+    &-center {
+      align-items: center;
+    }
+
+    &-initial {
+      align-items: initial;
+    }
+  }
+
+  &--justify {
+    &-start {
+      justify-content: flex-start;
+    }
+
+    &-end {
+      justify-content: flex-end;
+    }
+
+    &-center {
+      justify-content: center;
+    }
+
+    &-space-around {
+      justify-content: space-around;
+    }
+
+    &-space-between {
+      justify-content: space-between;
+    }
+
+    &-space-evenly {
+      justify-content: space-evenly;
+    }
+  }
+
+  &--spacing {
+    &-xsmall {
+      gap: $spacing-xs;
+    }
+
+    &-small {
+      gap: $spacing-sm;
+    }
+
+    &-medium {
+      gap: $spacing-md;
+    }
+
+    &-large {
+      gap: $spacing-lg;
+    }
+
+    &-large-plus {
+      gap: calc(#{$spacing-md} * 2);
+    }
+
+    &-xlarge {
+      gap: $spacing-xl;
+    }
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--mobile-direction {
+    @media screen and (min-width: $screen-s), screen and (min-width: $screen-m), screen and (min-width: $screen-l) {
+      &-row {
+        flex-direction: row !important;
+      }
+
+      &-column {
+        flex-direction: column !important;
+      }
+
+      &-column-reverse {
+        flex-direction: column-reverse !important;
+      }
+    }
+  }
+
+
+
+  &--layout {
+    &-columns {
+      > * {
+        &:first-child:nth-last-child(2),
+        &:first-child:nth-last-child(2) ~ * {
+          flex: 0 2 50%;
+        }
+
+        &:first-child:nth-last-child(3),
+        &:first-child:nth-last-child(3) ~ * {
+          flex: 0 2 33%;
+        }
+
+        &:first-child:nth-last-child(4),
+        &:first-child:nth-last-child(4) ~ * {
+          flex: 0 2 25%;
+        }
+
+        &:first-child:nth-last-child(5),
+        &:first-child:nth-last-child(5) ~ * {
+          flex: 0 2 20%;
+        }
+      }
+    }
+
+    &-two-columns-wide-left {
+      > * {
+        &:first-child:nth-last-child(2) {
+          flex: 0 2 65%;
+        }
+
+        &:first-child:nth-last-child(2) ~ * {
+          flex: 0 2 35%;
+        }
+      }
+    }
+
+    &-two-columns-wide-right {
+      > * {
+        &:first-child:nth-last-child(2) {
+          flex: 0 2 35%;
+        }
+
+        &:first-child:nth-last-child(2) ~ * {
+          flex: 0 2 65%;
+        }
+      }
+    }
+  }
+}
+
+/* Ajoutez ces styles à votre fichier CSS */
+// Assurez-vous que le conteneur principal (.main-container) utilise flexbox pour aligner son contenu verticalement
+.content {
+  flex: 1; /* Le contenu prendra toute la hauteur disponible */
+  display: flex; /* Utiliser un affichage flexible */
+  flex-direction: column; /* Aligner le contenu verticalement */
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
+  text-align: center; /* Centrer le texte horizontalement */
+}
+
+// Assurez-vous que le contenu principal (.content) utilise flexbox pour prendre toute la hauteur disponible
+.content div {
+  margin-top: 20px; /* Ajoute un espace entre le h3 et la div */
+}
+
+
+
+// // Définition des couleurs pour le thème sombre
+// :root {
+//   --foreground-rgb: 0, 0, 0;
+//   --background-start-rgb: 214, 219, 220;
+//   --background-end-rgb: 255, 255, 255;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --foreground-rgb: 255, 255, 255;
+//     --background-start-rgb: 0, 0, 0;
+//     --background-end-rgb: 0, 0, 0;
+//   }
+// }
+
+// // Application des couleurs au corps de la page
+// body {
+//   color: rgb(var(--foreground-rgb));
+//   background: linear-gradient(
+//       to bottom,
+//       transparent,
+//       rgb(var(--background-end-rgb))
+//     )
+//     rgb(var(--background-start-rgb));
+// }
+
+
 
 // Avatar
 
@@ -376,68 +366,179 @@ $screen-l: 992px;
 }
 
 // box
-
-// .box {
-//   overflow: hidden;
-//   height: 120px;
-//   background: white;
-//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-//   display: flex;
-//   align-items: center;
-// }
-
-// .box img.avatar {
-//   // height: 50%;
-//   width: 40px;
-//   object-fit: cover;
-// }
-
-// .box h2 {
-//   font-size: 16px;
-//   font-weight: bold;
-//   margin: 0;
-// }
-
-// .box p {
-//   font-size: 12px;
-//   line-height: 1.4;
-//   opacity: .7;
-//   margin-bottom: 0;
-//   margin-top: 8px;
-// }
-
-// .box .box-infos {
-//   padding: 16px;
-// }
-
+/* Style de base de la boîte */
+/* Style de la boîte */
 .box {
   overflow: hidden;
-  height: auto; /* Modifier la hauteur en auto pour permettre au contenu de s'étendre */
-  max-width: 600px; /* Limiter la largeur maximale du composant */
+  height: auto;
+  max-width: 600px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  border-radius: 10px; /* Ajouter un rayon de bordure arrondi */
-  padding: 16px; /* Ajouter un espacement interne */
+  border-radius: 10px;
+  padding: 16px;
 }
 
+/* Style de l'avatar */
 .box img.avatar {
   width: 40px;
   object-fit: cover;
-  border-radius: 50%; /* Assurez-vous que l'avatar a également un rayon de bordure arrondi */
+  border-radius: 50%;
 }
 
+/* Style des informations de la boîte */
+.box .box-infos {
+  padding-left: 16px;
+}
+
+/* Style du titre */
 .box h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
+/* Style du paragraphe */
 .box p {
   font-size: 12px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
+}
+
+/* Style du bouton de like */
+.box button {
+  border: none; /* Supprimer la bordure */
+  background: none; /* Supprimer l'arrière-plan */
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Style de l'icône de cœur */
+.box button svg {
+  fill: #FF69B4; /* Définir la couleur de remplissage du cœur en rose */
+  width: 20px; /* Ajuster la taille de l'icône de cœur si nécessaire */
+  height: 20px;
+}
+
+/* Style de l'icône de cœur au survol */
+.box button:hover svg {
+  fill: #FF1493; /* Modifier la couleur de remplissage du cœur au survol */
+}
+
+
+
+// banner
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  height: 80vh; /* La hauteur de la bannière sera égale à 100% de la hauteur de la vue */
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+// Notifications
+
+.notification {
+  overflow: hidden;
+  max-width: 600px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px; /* Ajout d'une marge en bas pour l'espacement entre les notifications */
+}
+
+.notification img.avatar-large {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.notification .notification-content {
+  padding-left: 16px; /* Ajoute une marge à gauche pour créer un espace entre le texte et l'avatar */
+}
+
+.notification p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin: 0;
+}
+
+.notification small {
+  color: #999999;
+  font-weight: bold;
+}
+
+.notification .notification-actions {
+  opacity: 0;
+  display: flex;
+  transition: ease .3s;
+}
+
+.notification:hover .notification-actions {
+  opacity: 1;
+}
+
+.notification .notification-actions a {
+  color: #999999;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.notification .notification-actions a:hover {
+  color: #555555;
+}
+
+// footer
+
+// global.scss
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: black;
+  font-size: 0.6rem;
+}
+
+.footer-content {
+  color: black;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content p:first-child {
+  margin-bottom: 10px;
 }

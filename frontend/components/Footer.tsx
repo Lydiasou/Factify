@@ -1,12 +1,13 @@
 import React from "react";
 import { FaGithub, FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaHeart } from "react-icons/fa";
+import '../src/app/globals.scss';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer" style={{ background: "#F4F4F4", display: "flex", alignItems: "center", justifyContent: "space-between", height: "100px", padding: "0px 50px", color: "black", fontSize: "0.6rem" }}>
-      <div className="footer-copyright" style={{ color: "black", textAlign: "center" }}>
-        <p style={{ margin: 0 }}>This footer is made with <FaHeart style={{ color: "#D23333" }} /></p>
-        <p style={{ textAlign: "center", width: "100%", whiteSpace: "pre-wrap", fontSize: "0.6rem" }}>
+    <footer className="footer">
+       <div className="footer-content">
+       <p>This footer is made with <FaHeart style={{ color: "#D23333" }} /></p>
+        <p>
           À propos
           Téléchargez l'application Factify
           Centre d'assistance

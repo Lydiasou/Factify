@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             alt="Factify Logo"
             style={{
               // maxWidth: "120px",
-              width: "80px", // Ajuster la largeur de l'image
+              width: "180px", // Ajuster la largeur de l'image
               height: "auto",
               borderRadius: "50%"
             }}
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">Factify</a>
+              {/* <a className="nav-link" href="#">Factify</a> */}
             </li>
             <li className="nav-item dropdown">
               <div className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
