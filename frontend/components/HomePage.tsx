@@ -22,9 +22,9 @@ import Button from '../components/Button';
 import Navbar from '../components/Navbar';
 import '../src/app/globals.scss';
 import { PostText1, PostText2, PostText3, PostText4, PostText5 } from '../src/app/data/PostText';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
-const HomePage: React.FC = () => {
-
+const HomePage: React.FC<HomePageProps> = () => { // Mettez à jour la définition du composant pour accepter onLogin
   return (
     <>
       <Header />

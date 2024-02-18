@@ -1,42 +1,4 @@
-// import React from 'react';
-// import { createRoot } from 'react-dom';
-// import { WagmiConfig } from 'wagmi';
-// import HomePage from '../components/HomePage';
-
-// const wagmiConfig = {
-//   autoConnect: false,
-//   connectors: [
-//     {
-//       type: 'walletconnect',
-//       options: { infuraId: process.env.NEXT_PUBLIC_PROJECT_ID }
-//     },
-//     {
-//       type: 'alchemy',
-//       options: { apiKey: process.env.ALCHEMY_ID }
-//     }
-//   ],
-//   publicClient: [
-//     {
-//       type: 'infura',
-//       options: { projectId: process.env.NEXT_PUBLIC_INFURA_ID }
-//     },
-//     {
-//       type: 'alchemy',
-//       options: { apiKey: process.env.ALCHEMY_ID }
-//     }
-//   ]
-// };
-
-// const root = document.getElementById('root');
-
-// if (root) {
-//   createRoot(root).render(
-//     <WagmiConfig config={wagmiConfig}>
-//       <HomePage />
-//     </WagmiConfig>
-//   );
-// }
-
+'use client';
 import '@rainbow-me/rainbowkit/styles.css';
 import { ReactNode } from 'react';
 import {
@@ -44,11 +6,17 @@ import {
   RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
 
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import Banner from '../components/Banner';
+import { useNavigate } from 'react-router-dom';
+
 import HomePage from '../components/HomePage';
 import {configureChains, createConfig, WagmiConfig} from 'wagmi';
 import {hardhat } from 'wagmi/chains';
 import {alchemyProvider} from 'wagmi/providers/alchemy';
 import {publicProvider} from 'wagmi/providers/public';
+import { Web3ReactProvider } from '@web3-react/core';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -83,11 +51,15 @@ const wagmiConfig = createConfig({
 
 export default function RootLayout({children} : { children: ReactNode }) {
   return (
+    <WagmiConfig config={wagmiConfig}>
+      <RainbowKitProvider chains={chains}>
 
-        <WagmiConfig config={wagmiConfig}>
-            <RainbowKitProvider chains={chains}>
-              <HomePage />
-            </RainbowKitProvider>
-        </WagmiConfig>
+        {typeof window !== 'undefined' && (
+          <Router>
+            <HomePage />
+          </Router>
+        )}
+      </RainbowKitProvider>
+    </WagmiConfig>
   );
 }

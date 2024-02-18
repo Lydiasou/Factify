@@ -1,80 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-// import Box from '../components/Box';
-// import Avatar from '../components/Avatar';
-// import '../src/app/globals.scss';
-
-// interface Message {
-//   author: string;
-//   content: string;
-//   created_at: string;
-// }
-
-// const ChatRoom: React.FC = () => {
-//   const [messages, setMessages] = useState<Message[]>([]);
-//   const [author, setAuthor] = useState('');
-//   const [comment, setComment] = useState('');
-
-//   useEffect(() => {
-//     const storedMessages = localStorage.getItem('messages');
-//     if (storedMessages) {
-//       setMessages(JSON.parse(storedMessages));
-//     }
-//   }, []);
-
-//   useEffect(() => {
-//     localStorage.setItem('messages', JSON.stringify(messages));
-//   }, [messages]);
-
-//   const handleSubmit = (event: React.FormEvent) => {
-//     event.preventDefault();
-//     const currentDate = new Date().toISOString();
-//     const newMessage: Message = { author, content: comment, created_at: currentDate };
-//     setMessages([...messages, newMessage]);
-//     setComment('');
-//   };
-
-//   const handleRefresh = () => {
-//     setMessages([]);
-//   };
-
-//   return (
-//     <div id="chatroom">
-//       <form onSubmit={handleSubmit}>
-//         <input
-//           type="text"
-//           value={author}
-//           onChange={e => setAuthor(e.target.value)}
-//           placeholder="Your Name"
-//           required
-//         />
-//         <input
-//           type="text"
-//           value={comment}
-//           onChange={e => setComment(e.target.value)}
-//           placeholder="Your Message"
-//           required
-//         />
-//         <button type="submit">Send</button>
-//       </form>
-//       <ul id="messages">
-//         {messages.map((message, index) => (
-//           <li key={index}>
-//             {message.content} (posted <span className="date">
-//               {Math.round((new Date() - new Date(message.created_at)) / 60000)} minutes
-//             </span> ago) by {message.author}
-//           </li>
-//         ))}
-//       </ul>
-//       <button onClick={handleRefresh}>Refresh</button>
-//     </div>
-//   );
-// };
-
-// export default ChatRoom;
-
-
-///////
-
 import React, { useState, useEffect } from 'react';
 import Box from '../components/Box';
 import  Button from '../components/Button';
@@ -82,9 +5,10 @@ import Avatar from '../components/Avatar';
 import '../src/app/globals.scss';
 import FlexContent, { FlexContentAlignment, FlexContentDirection, FlexContentSpacing } from './FlexContent';
 import { PostText2, PostText3, PostText4, PostText5 } from '../src/app/data/PostText';
-
+import { useNavigate } from 'react-router-dom';
 
 const ChatRoom: React.FC = () => {
+
 
   const defaultMessages = [
     { author: PostText2.USER_NAME, content: PostText2.USER_POST },
