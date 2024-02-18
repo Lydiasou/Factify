@@ -28,14 +28,16 @@ const HomePage: React.FC = () => {
       <FlexContent direction={FlexContentDirection.COLUMN} alignment={FlexContentAlignment.CENTER} justify={FlexContentJustify.CENTER} spacing={FlexContentSpacing.LARGE}
       >
 
-        <Box productName={PostText1.USER_NAME} productDescription={PostText1.USER_POST} avatarUrl={PostText1.AVATAR_USER}/><br></br>
+        {/* Box */}
+        {/* <Box productName={PostText1.USER_NAME} productDescription={PostText1.USER_POST} avatarUrl={PostText1.AVATAR_USER}/><br></br>
         <Box productName={PostText2.USER_NAME} productDescription={PostText2.USER_POST} avatarUrl={PostText2.AVATAR_USER}/><br></br>
         <Box productName={PostText3.USER_NAME} productDescription={PostText3.USER_POST} avatarUrl={PostText3.AVATAR_USER}/><br></br>
         <Box productName={PostText4.USER_NAME} productDescription={PostText4.USER_POST} avatarUrl={PostText4.AVATAR_USER}/><br></br>
-        <Box productName={PostText5.USER_NAME} productDescription={PostText5.USER_POST} avatarUrl={PostText5.AVATAR_USER}/><br></br>
+        <Box productName={PostText5.USER_NAME} productDescription={PostText5.USER_POST} avatarUrl={PostText5.AVATAR_USER}/><br></br> */}
 
         {/* <Navbar /> */}
 
+        {/* Flash Alert */}
         {/* <Flash type="success" message="Yay! 🎉 you successfully signed in to our service." />
         <Flash type="warning" message="Mmh 🤔 seems like you don't have <a href='#'>profile picture</a> yet." />
         <Flash type="danger" message="Oops! 😱 a problem has occurred while processing your booking." /> */}
@@ -51,14 +53,9 @@ const HomePage: React.FC = () => {
         <Notification date="9th January" content="Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit." avatarSrc="https://kitt.lewagon.com/placeholder/users/Eschults" /> */}
 
 
-        {/* <Banner title="Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!" subtitle="Change your life and learn to code at one of our campuses around the world." /> */}
-        {/* <Box productName={PostText1.USER_NAME} productDescription={PostText1.USER_POST} avatarUrl={PostText1.AVATAR_USER}/><br></br>
-        <Box productName={PostText2.USER_NAME} productDescription={PostText2.USER_POST} avatarUrl={PostText2.AVATAR_USER}/><br></br>
-        <Box productName={PostText3.USER_NAME} productDescription={PostText3.USER_POST} avatarUrl={PostText3.AVATAR_USER}/><br></br>
-        <Box productName={PostText4.USER_NAME} productDescription={PostText4.USER_POST} avatarUrl={PostText4.AVATAR_USER}/><br></br>
-        <Box productName={PostText5.USER_NAME} productDescription={PostText5.USER_POST} avatarUrl={PostText5.AVATAR_USER}/><br></br> */}
+        <Banner title="Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!" subtitle="Change your life and learn to code at one of our campuses around the world." />
 
-        {/* <Navbar /> */}
+
 
         {/* <Flash type="success" message="Yay! 🎉 you successfully signed in to our service." />
         <Flash type="warning" message="Mmh 🤔 seems like you don't have <a href='#'>profile picture</a> yet." />

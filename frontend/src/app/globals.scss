@@ -432,11 +432,15 @@ $screen-l: 992px;
 
 // banner
 .banner {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 150px 0;
-  height: 80vh; /* La hauteur de la bannière sera égale à 100% de la hauteur de la vue */
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);
+  background-size: cover; /* Redimensionne l'image de fond pour qu'elle couvre toute la zone */
+  background-position: center center; /* Centre l'image de fond horizontalement et verticalement */
+  width: 100%; /* La largeur de la bannière sera égale à 100% de la largeur de son conteneur */
+  height: 80vh; /* La hauteur de la bannière sera égale à 80% de la hauteur de la vue */
+  display: flex; /* Utilise un affichage flexible pour centrer le contenu */
+  align-items: center; /* Centre le contenu verticalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  text-align: center; /* Centre le texte horizontalement */
 }
 
 .banner h1 {
