@@ -1,3 +1,5 @@
+'use client'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import React from "react";
 import Button from '../components/Button';
 import '../src/app/globals.scss';
@@ -13,7 +15,8 @@ const Banner: React.FC<BannerProps> = ({ title, subtitle }) => {
       <div className="container">
         <h1>{title}</h1>
         <p>{subtitle}</p>
-        <Button className="btn btn-flat" href="#"> Inscrivez-vous maintenant pour contribuer</Button>
+        {/* <Button className="btn btn-flat" href="#"> Inscrivez-vous maintenant pour contribuer</Button> */}
+        <ConnectButton />
       </div>
     </div>
   );
