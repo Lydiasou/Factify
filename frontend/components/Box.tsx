@@ -6,8 +6,6 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 
 
-
-
 import '../src/app/globals.scss';
 import { PostText1, PostText2, PostText3, PostText4, PostText5 } from '../src/app/data/PostText';
 import FlexContent, { FlexContentAlignment, FlexContentDirection, FlexContentSpacing } from "./FlexContent";

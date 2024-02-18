@@ -169,20 +169,20 @@ $screen-l: 992px;
   }
 }
 
-/* Ajoutez ces styles à votre fichier CSS */
+
 // Assurez-vous que le conteneur principal (.main-container) utilise flexbox pour aligner son contenu verticalement
 .content {
-  flex: 1; /* Le contenu prendra toute la hauteur disponible */
-  display: flex; /* Utiliser un affichage flexible */
-  flex-direction: column; /* Aligner le contenu verticalement */
-  justify-content: center; /* Centrer le contenu horizontalement */
-  align-items: center; /* Centrer le contenu verticalement */
-  text-align: center; /* Centrer le texte horizontalement */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 // Assurez-vous que le contenu principal (.content) utilise flexbox pour prendre toute la hauteur disponible
 .content div {
-  margin-top: 20px; /* Ajoute un espace entre le h3 et la div */
+  margin-top: 20px;
 }
 
 
@@ -261,12 +261,12 @@ $screen-l: 992px;
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #670BFF;
+  background: linear-gradient(135deg, #000001, #018FA6, #E0E111);
   transition: background 0.3s ease;
 }
 
 .btn-flat:hover {
-  background: #4D04C4;
+  background: #018FA6;
   color: white;
 }
 
@@ -287,13 +287,13 @@ $screen-l: 992px;
 
 // Navbar
 
-/* navbar.css */
+
 
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
   //
-  padding: 10px 20px; /* Ajouter un peu de marge intérieure */
+  padding: 10px 20px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -366,8 +366,7 @@ $screen-l: 992px;
 }
 
 // box
-/* Style de base de la boîte */
-/* Style de la boîte */
+
 .box {
   overflow: hidden;
   height: auto;
@@ -380,26 +379,26 @@ $screen-l: 992px;
   padding: 16px;
 }
 
-/* Style de l'avatar */
+
 .box img.avatar {
   width: 40px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-/* Style des informations de la boîte */
+
 .box .box-infos {
   padding-left: 16px;
 }
 
-/* Style du titre */
+
 .box h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
-/* Style du paragraphe */
+
 .box p {
   font-size: 12px;
   line-height: 1.4;
@@ -408,24 +407,24 @@ $screen-l: 992px;
   margin-top: 8px;
 }
 
-/* Style du bouton de like */
+
 .box button {
-  border: none; /* Supprimer la bordure */
-  background: none; /* Supprimer l'arrière-plan */
+  border: none;
+  background: none;
   cursor: pointer;
   padding: 0;
 }
 
-/* Style de l'icône de cœur */
+
 .box button svg {
-  fill: #FF69B4; /* Définir la couleur de remplissage du cœur en rose */
-  width: 20px; /* Ajuster la taille de l'icône de cœur si nécessaire */
+  fill: #FF69B4;
+  width: 20px;
   height: 20px;
 }
 
-/* Style de l'icône de cœur au survol */
+
 .box button:hover svg {
-  fill: #FF1493; /* Modifier la couleur de remplissage du cœur au survol */
+  fill: #FF1493;
 }
 
 
@@ -433,14 +432,13 @@ $screen-l: 992px;
 // banner
 .banner {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);
-  background-size: cover; /* Redimensionne l'image de fond pour qu'elle couvre toute la zone */
-  background-position: center center; /* Centre l'image de fond horizontalement et verticalement */
-  width: 100%; /* La largeur de la bannière sera égale à 100% de la largeur de son conteneur */
-  height: 80vh; /* La hauteur de la bannière sera égale à 80% de la hauteur de la vue */
-  display: flex; /* Utilise un affichage flexible pour centrer le contenu */
-  align-items: center; /* Centre le contenu verticalement */
-  justify-content: center; /* Centre le contenu horizontalement */
-  text-align: center; /* Centre le texte horizontalement */
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .banner h1 {
@@ -469,7 +467,7 @@ $screen-l: 992px;
   align-items: center;
   border-radius: 10px;
   padding: 16px;
-  margin-bottom: 16px; /* Ajout d'une marge en bas pour l'espacement entre les notifications */
+  margin-bottom: 16px;
 }
 
 .notification img.avatar-large {
@@ -480,7 +478,7 @@ $screen-l: 992px;
 }
 
 .notification .notification-content {
-  padding-left: 16px; /* Ajoute une marge à gauche pour créer un espace entre le texte et l'avatar */
+  padding-left: 16px;
 }
 
 .notification p {
@@ -545,4 +543,30 @@ $screen-l: 992px;
 
 .footer-content p:first-child {
   margin-bottom: 10px;
+}
+
+// ChatRoom.module.scss
+.chatroom {
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  background: #F4F4F4;
+  color: #333;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.date {
+  color: #b3b3b3;
+}
+
+#messages {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid lightgrey;
+  list-style-type: none;
+}
+
+#messages li {
+  margin-bottom: 20px;
 }

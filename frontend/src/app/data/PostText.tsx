@@ -1,6 +1,24 @@
 // PostText.ts
 
 // Enum pour le premier ensemble de texte de post
+
+const getAvatarPath = (author: string) => {
+  switch (author) {
+    case "JohnDoe123":
+      return "/images/avatar2.png";
+    case "Alice456":
+      return "/images/avatar1.png";
+    case "Emily789":
+      return "/images/avatar1.png";
+    case "David101":
+      return "/images/avatar2.png";
+    case "Sophia222":
+      return "/images/avatar1.png";
+    default:
+      return "/images/avatar1.png"; // Par défaut, l'avatar 1 est utilisé
+  }
+};
+
 enum PostText1 {
   USER_NAME = "JohnDoe123",
   AVATAR_USER = "https://kitt.lewagon.com/placeholder/users/cveneziani",

@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             alt="Factify Logo"
             style={{
               // maxWidth: "120px",
-              width: "180px", // Ajuster la largeur de l'image
+              width: "150px", // Ajuster la largeur de l'image
               height: "auto",
               borderRadius: "50%"
             }}
@@ -47,17 +47,18 @@ const Header: React.FC = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto">
-            <li className="nav-item active">
-              {/* <a className="nav-link" href="#">Factify</a> */}
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Accueil</a>
             </li>
-            <li className="nav-item dropdown">
-              <div className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <a className="dropdown-item" data-turbo-method="delete" href="#">Log out</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">À propos</a>
             </li>
-            {/* <li class="nav-item"></li> */}
+            <li class="nav-item">
+              <a class="nav-link" href="#">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Paramètres</a>
+            </li>
           </ul>
         </div>
       </div>
